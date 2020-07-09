@@ -2,7 +2,7 @@
   background-size: cover;
   background-position: center;
   padding: 150px 0;
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("mask_banner.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("https://images.pexels.com/photos/1473215/pexels-photo-1473215.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   background-repeat: no-repeat;
 }
 
@@ -24,4 +24,8 @@
 .btn-flat:hover {
   background: #1BCB7F;
   color: white;
+}
+
+#style {
+  text-align: center;
 }
