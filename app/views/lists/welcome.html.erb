@@ -1,0 +1,37 @@
+<h1>welcome to the <span id="yellow">tunes</span> of freedom </h1>
+<br>
+<hr>
+<h2>choose your style!</h2>
+<br>
+
+<% @lists.each do |list| %>
+  <%= list.name + "  " + list.style %>
+  <%= button_to "test list", list, class: "btn btn-success" %>
+<% end %>
+
+<hr>
+
+
+<div class="list-box">
+
+  <div class="item">
+    <iframe width="560" height="315" src="<%= List.first.link %>"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <div class="item">
+    <iframe width="560" height="315" src="<%= List.find(id=2).link %>"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <div class="item">
+    <iframe width="560" height="315" src="<%= List.find(id=3).link %>"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <div class="item">
+    <iframe width="560" height="315" src="<%= List.find(id=4).link %>"
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
