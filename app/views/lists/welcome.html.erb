@@ -35,3 +35,14 @@
   </div>
 </div>
 
+<!-- trying to find a way to loop for every list! -->
+<div class="list-box">
+
+  <% @lists.each do |list| %>
+    <div class="item">
+      <iframe width="560" height="315" src="<%= list.link %>"
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  <% end %>
+
+</div>
