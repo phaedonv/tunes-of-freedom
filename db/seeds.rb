@@ -53,4 +53,20 @@ list4 = List.new(
 
 list4.save
 
+list5 = List.new(
+    name: "name 5",
+    style: "style 5",
+    link: "https://www.youtube.com/embed/videoseries?list=PLlBfY57Rd4S8OFKIYhcWoGdRXSbYfZt0V"
+    )
+
+list5.save
+
+list6 = List.new(
+    name: "name 6",
+    style: "style 6",
+    link: "https://www.youtube.com/embed/videoseries?list=PLlBfY57Rd4S8QHnWB02aULG9TMCQLR1Ej"
+    )
+
+list6.save
+
 puts "Lists created! Enjoy!"
