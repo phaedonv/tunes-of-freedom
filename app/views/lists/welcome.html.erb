@@ -1,17 +1,20 @@
+<!--
 <h1>welcome to the <span id="yellow">tunes</span> of freedom </h1>
 <br>
 <hr>
 <h2>choose your style!</h2>
 <br>
-
-<% @lists.each do |list| %>
-  <%= list.name + "  " + list.style %>
-  <%= button_to "test list", list, class: "btn btn-success" %>
-<% end %>
+-->
+<div class="list-box">
+  <% @lists.each do |list| %>
+    <%= list.name + " | " + list.style %>
+    <%= button_to "test list", list, class: "btn btn-success" %>
+  <% end %>
+</div>
 
 <hr>
 
-
+<!--
 <div class="list-box">
 
   <div class="item">
@@ -34,6 +37,7 @@
     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div>
+-->
 
 <!-- trying to find a way to loop for every list! -->
 <div class="list-box">

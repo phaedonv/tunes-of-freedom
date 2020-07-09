@@ -22,8 +22,9 @@ h1, h2, h3 {
   text-align: center;
   font-family: 'Bangers', sans-serif, cursive;
   font-size: 60px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   letter-spacing: 14px;
-  color: #7B013E;
+  color: #28a745;
 }
 
 #yellow {
@@ -31,7 +32,7 @@ h1, h2, h3 {
 }
 
 body {
-  background-color: white;
+  background-color: #2A2A2A;
 }
 
 .list-box {
@@ -40,4 +41,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  color: white;
 }
+
+
