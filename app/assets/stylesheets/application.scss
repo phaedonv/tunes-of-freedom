@@ -27,6 +27,11 @@ h1, h2, h3 {
   color: #28a745;
 }
 
+.item {
+  display: flex;
+  justify-content: space-around;
+}
+
 #yellow {
   color: #E0A801;
 }
@@ -45,4 +50,18 @@ body {
   color: white;
 }
 
+.navbar {
+  position: fixed;
+  width: 100%;
+}
 
+.nav-link {
+  color: #28a745 !important;
+  font-size: 24px;
+}
+
+.nav-link:hover {
+  color: black !important;
+  background-color: #28a745;
+  border-radius: 80px;
+}

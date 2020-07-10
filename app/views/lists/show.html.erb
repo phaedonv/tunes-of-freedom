@@ -15,12 +15,15 @@
   <%= @list.link %>
 </p>
 
+<p>
+  Description:
+  <%= @list.content %>
+</p>
+
 <%= link_to 'Edit', edit_list_path(@list) %> |
 <%= link_to 'Back', lists_path %>
 
-<h1>here should be a list</h1>
-
-<h2><%= @list.name %></h2>
+<h1><%= @list.name %></h1>
 <h3><%= @list.style %></h3>
 
 <div class="item">

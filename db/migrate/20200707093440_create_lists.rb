@@ -4,6 +4,7 @@ class CreateLists < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :style
       t.string :link
+      t.string :content
 
       t.timestamps
     end
