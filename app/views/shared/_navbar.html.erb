@@ -1,5 +1,5 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
+  <%= link_to root_path, class: "navbar-brand" do %>
     <%= image_tag "logo.jpg", style: 'height:auto;width:42px;border-radius:80px;' %>
   <% end %>
 
@@ -18,23 +18,25 @@
         <li class="nav-item">
           <%= link_to "Lists", lists_path, class: "nav-link" %>
         </li>
-      <div class="dropdown">
-        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    My Dashboard
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-              <%= link_to "Action", "#", class: "dropdown-item" %>
-              <%= link_to "Another action", "#", class: "dropdown-item" %>
-              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-            </div>
-          </div>
-      <% else %>
-        <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-        </li>
-      <% end %>
-    </div>
+        <li class="nav-item dropdown">
+          <div class="dropdown" id="log-dropdown">
+            <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        My Dashboard
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item"><%= link_to "Action", "#", class: "dropdown-item" %></a>
+                  <%= link_to "Another action", "#", class: "dropdown-item" %>
+                  <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+                </div>
+              </div>
+          <% else %>
+            <li class="nav-item">
+              <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+            </li>
+          <% end %>
+        </div>
+      </li>
     </ul>
   </div>
 </div>
