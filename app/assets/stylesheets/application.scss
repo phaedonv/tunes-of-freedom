@@ -13,9 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+ //External
 @import "bootstrap/scss/bootstrap";
 
 
+
+//CSS partials
+@import "components/navbar";
 
 h1, h2, h3 {
   text-transform: uppercase;

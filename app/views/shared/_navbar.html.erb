@@ -3,14 +3,16 @@
     <%= image_tag "logo.jpg", style: 'height:auto;width:42px;border-radius:80px;' %>
   <% end %>
 
+  <!--
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+-->
+
 
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <% if user_signed_in? %>
         <li class="nav-item active">
           <%= link_to "Home", root_path, class: "nav-link" %>
         </li>
@@ -18,25 +20,24 @@
         <li class="nav-item">
           <%= link_to "Lists", lists_path, class: "nav-link" %>
         </li>
-        <li class="nav-item dropdown">
-          <div class="dropdown" id="log-dropdown">
-            <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        My Dashboard
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item"><%= link_to "Action", "#", class: "dropdown-item" %></a>
-                  <%= link_to "Another action", "#", class: "dropdown-item" %>
-                  <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-                </div>
-              </div>
+        <% if user_signed_in? %>
+        <div class="dropdown">
+  <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <%= link_to "Action", "#", class: "dropdown-item" %>
+    <%= link_to "Another action", "#", class: "dropdown-item" %>
+    <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+  </div>
+</div>
           <% else %>
             <li class="nav-item">
               <%= link_to "Login", new_user_session_path, class: "nav-link" %>
             </li>
           <% end %>
         </div>
-      </li>
+
     </ul>
   </div>
 </div>
