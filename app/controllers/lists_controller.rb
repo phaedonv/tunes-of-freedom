@@ -21,6 +21,9 @@ class ListsController < ApplicationController
   # GET /lists/new
   def new
     @list = List.new
+
+    authorize @restaurant
+
   end
 
   # GET /lists/1/edit
