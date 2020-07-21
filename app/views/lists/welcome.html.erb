@@ -7,8 +7,12 @@
 -->
 <div class="list-box">
   <% @lists.each do |list| %>
-    <%= list.name + " | " + list.style %>
-    <%= button_to "test list", list, class: "btn btn-success" %>
+    <div>
+      <%= list.name + " | " + list.style %>
+    </div>
+    <div>
+      <%= button_to "test list", list, class: "btn btn-success" %>
+    </div>
   <% end %>
 </div>
 
