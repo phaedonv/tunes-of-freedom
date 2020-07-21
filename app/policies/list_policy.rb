@@ -5,11 +5,15 @@ class ListPolicy < ApplicationPolicy
     end
   end
 
-  def create?
-    return true
+  def show?
+    true
   end
 
-  def update?
+  def create?
+    true
+  end
+
+  def edit?
     record.user == user
     # - record: the list passed to the `authorize` method in controller
     # - user:   the `current_user` signed in with Devise.

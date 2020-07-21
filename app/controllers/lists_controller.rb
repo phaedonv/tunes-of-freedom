@@ -6,6 +6,8 @@ class ListsController < ApplicationController
   # GET /lists.json
   def welcome
     @lists = List.all
+
+    @list = policy_scope(List).order(created_at: :desc)
   end
 
   def index
@@ -18,6 +20,8 @@ class ListsController < ApplicationController
   # GET /lists/1.json
   def show
     set_list
+
+    authorize @list
   end
 
   # GET /lists/new
@@ -30,11 +34,14 @@ class ListsController < ApplicationController
 
   # GET /lists/1/edit
   def edit
+    authorize @list
   end
 
   # POST /lists
   # POST /lists.json
   def create
+    authorize @list
+
     @list = List.new(list_params)
 
     respond_to do |format|
@@ -51,6 +58,8 @@ class ListsController < ApplicationController
   # PATCH/PUT /lists/1
   # PATCH/PUT /lists/1.json
   def update
+    authorize @list
+
     respond_to do |format|
       if @list.update(list_params)
         format.html { redirect_to @list, notice: 'List was successfully updated.' }
@@ -65,6 +74,7 @@ class ListsController < ApplicationController
   # DELETE /lists/1
   # DELETE /lists/1.json
   def destroy
+    authorize @list
     @list.destroy
     respond_to do |format|
       format.html { redirect_to lists_url, notice: 'List was successfully destroyed.' }
