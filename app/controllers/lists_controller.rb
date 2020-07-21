@@ -22,7 +22,7 @@ class ListsController < ApplicationController
   def new
     @list = List.new
 
-    authorize @restaurant
+    authorize @list
 
   end
 
