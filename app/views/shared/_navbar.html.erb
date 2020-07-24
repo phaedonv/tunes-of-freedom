@@ -1,7 +1,12 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <%= link_to root_path, class: "navbar-brand" do %>
-    <%= image_tag "logo_2.jpg", style: 'height:142px;width:142px;border-radius:50%;object-fit:cover;object-position:center;position:absolute;' %>
-    <p id="welcome-msg">Welcome <%= current_user.email %>! Enjoy your music.</p>
+    <% if current_user %>
+      <%= image_tag "logo_2.jpg", style: 'height:142px;width:142px;border-radius:50%;object-fit:cover;object-position:center;position:absolute;' %>
+      <p id="welcome-msg">Welcome <%= current_user.email %>! Enjoy your music.</p>
+      <% else %>
+        <%= image_tag "logo_2.jpg", style: 'height:142px;width:142px;border-radius:50%;object-fit:cover;object-position:center;position:absolute;' %>
+        <p id="welcome-msg">Sign in to create your own lists!</p>
+    <% end %>
   <% end %>
 
   <!--
