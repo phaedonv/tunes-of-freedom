@@ -30,3 +30,7 @@
     <%= form.submit %>
   </div>
 <% end %>
+
+<%= simple_form_for(list) do |f| %>
+  <%= f.input :photo, as: :file %>
+<% end %>
