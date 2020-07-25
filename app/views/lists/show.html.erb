@@ -20,6 +20,15 @@
   <%= @list.content %>
 </p>
 
+<div id="list-photo">
+  <div>
+    Photo of the list..
+  </div>
+  <div>
+    <%= cl_image_tag @list.photo.key, height: 432, width: 532, crop: :fill %>
+  </div>
+</div>
+
 <%= link_to 'Edit', edit_list_path(@list) %> |
 <%= link_to 'Back', lists_path %>
 

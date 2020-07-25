@@ -7,13 +7,11 @@ class ListsController < ApplicationController
   def welcome
     @lists = List.all
 
-    @list = policy_scope(List).order(created_at: :desc)
+
   end
 
   def index
-    @lists = List.all
-
-    @list = policy_scope(List).order(created_at: :desc)
+    welcome
   end
 
   # GET /lists/1
@@ -40,18 +38,13 @@ class ListsController < ApplicationController
   # POST /lists
   # POST /lists.json
   def create
-    authorize @list
-
     @list = List.new(list_params)
-
-    respond_to do |format|
-      if @list.save
-        format.html { redirect_to @list, notice: 'List was successfully created.' }
-        format.json { render :show, status: :created, location: @list }
-      else
-        format.html { render :new }
-        format.json { render json: @list.errors, status: :unprocessable_entity }
-      end
+    @list.user = current_user
+    authorize @list
+    if @list.save
+      redirect_to @list, notice: 'List was successfully created.'
+    else
+      render :new
     end
   end
 
