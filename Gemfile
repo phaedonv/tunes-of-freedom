@@ -27,6 +27,12 @@ gem 'devise'
 
 gem 'pundit'
 
+# Upload photos
+gem 'cloudinary'
+
+# Secure files
+gem 'dotenv-rails', groups: [:development, :test]
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
