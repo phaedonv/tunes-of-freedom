@@ -10,7 +10,7 @@ class ListPolicy < ApplicationPolicy
   end
 
   def create?
-    true
+true
   end
 
   def edit?

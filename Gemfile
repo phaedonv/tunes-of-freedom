@@ -21,11 +21,18 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+#forms
+gem 'simple_form'
 # Authentication
 gem 'devise'
 
 gem 'pundit'
+
+# Upload photos
+gem 'cloudinary'
+
+# Secure files
+gem 'dotenv-rails', groups: [:development, :test]
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
