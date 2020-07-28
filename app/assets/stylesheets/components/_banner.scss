@@ -57,6 +57,13 @@ p.cursor::after {
 }
 //...............................................
 
+#welcome-quote {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 #quote {
   font-size: 36px;
   color: white;
