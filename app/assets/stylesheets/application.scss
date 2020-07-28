@@ -78,7 +78,13 @@ body {
   align-items: center;
 }
 
-#welcome-cards {
+#video-card {
   margin-top: 21px;
   margin-bottom: 21px;
+}
+
+#landing-cards {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
