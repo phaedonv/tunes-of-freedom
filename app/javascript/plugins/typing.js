@@ -6,7 +6,7 @@ var i = 0,
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".
 var textArray = [
-  "Emancipate yourselves from mental slavery. None but ourselves can free our minds.|Bob Marley",
+  " Emancipate yourselves from mental slavery. None but ourselves can free our minds.|Bob Marley",
   "Don't criticize what you can't understand|Bob Dylan",
   "I get by with a little help from my friends.|John Lennon",
   "And when the night is cloudy, there is still a light, that shines on me, shine until tomorrow, let it be.|Paul McCartney",
