@@ -10,14 +10,22 @@ var textArray = [
   "Don't criticize what you can't understand|Bob Dylan",
   "I get by with a little help from my friends.|John Lennon",
   "And when the night is cloudy, there is still a light, that shines on me, shine until tomorrow, let it be.|Paul McCartney",
-  "You may say I'm a dreamer.. but I'm not the only one; I hope someday you'll join us and the world will live as one.|John Lennon"
+  "You may say I'm a dreamer.. but I'm not the only one; I hope someday you'll join us and the world will live as one.|John Lennon",
+  "They will not control us, we will be victorious.|Muse",
+  "Lose your dreams.. and you will lose your mind.|The Rolling Stones",
+  "Being drunk is a good disguise. I drink so I can talk to assholes. This includes me.|Jim Morrison",
+  "We co-create our own fate; Man from stars, man from ape; Everything's connected|Tim Booth",
+  "The truth begins again.. the truth is not that comfortable, no..|Moby",
+  "I'm very emotional; I think I may go mad in several years' time.|Freddie Mercury",
+  "Come closer and see. See into the dark, just follow your eyes!|The Cure",
+  "I'm like a patient trying to find levitation|Damian Marley"
 ];
 
 // Speed (in milliseconds) of typing.
-var speedForward = 100, //Typing Speed
-    speedWait = 1000, // Wait between typing and backspacing
+var speedForward = 150, //Typing Speed
+    speedWait = 2000, // Wait between typing and backspacing
     speedBetweenLines = 1000, //Wait between first and second lines
-    speedBackspace = 25; //Backspace Speed
+    speedBackspace = 42; //Backspace Speed
 
 //Run the loop
 typeWriter("output", textArray);
