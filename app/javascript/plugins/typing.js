@@ -4,6 +4,24 @@ var i = 0,
     isBackspacing = false,
     isParagraph = false;
 
+// Random quote?
+function shuffle(arra1) {
+    var ctr = arra1.length, temp, index;
+
+// While there are elements in the array
+    while (ctr > 0) {
+// Pick a random index
+        index = Math.floor(Math.random() * ctr);
+// Decrease ctr by 1
+        ctr--;
+// And swap the last element with it
+        temp = arra1[ctr];
+        arra1[ctr] = arra1[index];
+        arra1[index] = temp;
+    }
+    return arra1;
+}
+
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".
 var textArray = [
   " Emancipate yourselves from mental slavery. None but ourselves can free our minds.|Bob Marley",
@@ -21,14 +39,18 @@ var textArray = [
   "I'm like a patient trying to find levitation|Damian Marley"
 ];
 
+var quote = shuffle(textArray)
 // Speed (in milliseconds) of typing.
 var speedForward = 150, //Typing Speed
     speedWait = 2000, // Wait between typing and backspacing
     speedBetweenLines = 1000, //Wait between first and second lines
     speedBackspace = 42; //Backspace Speed
 
+
+//let ranquote = textArray[Math.floor(Math.random()*textArray.length)];
+
 //Run the loop
-typeWriter("output", textArray);
+typeWriter("output", quote);
 
 function typeWriter(id, ar) {
   var element = $("#" + id),
@@ -98,3 +120,4 @@ function typeWriter(id, ar) {
     }
   }
 }
+
