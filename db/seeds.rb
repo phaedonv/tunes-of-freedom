@@ -22,7 +22,7 @@ puts "..........................."
 puts "now creating admin!"
 p admin = User.create!(
   email: "admin@admin.com",
-  password: "useradmin",
+  password: 'EnterYourPassword',
   name: "nemo",
   admin: true
   )
