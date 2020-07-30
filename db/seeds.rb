@@ -5,8 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-puts "now destroying all lists..."
+
+require "open-uri"
+
+puts "now destroying all lists & users..."
 List.destroy_all
+User.destroy_all
 
 puts "..........................."
 puts "..........................."
@@ -24,6 +28,8 @@ puts "..........................."
 puts "..........................."
 puts "..........................."
 
+photo1 = File.open(File.join(Rails.root, "/app/assets/images/tof.gif"))
+# photo1 = URI.open("https://media.giphy.com/media/kBkuVMZkRP44BE3s5s/giphy.mp4")
 list1 = List.new(
     name: "name 1",
     style: "style 1",
@@ -31,9 +37,11 @@ list1 = List.new(
     content: "test content text",
     user: admin
     )
-
+list1.photo.attach(io: photo1, filename: 'image.png', content_type: 'image/png')
 list1.save
 
+photo2 = File.open(File.join(Rails.root, "/app/assets/images/tof.gif"))
+# photo2 = URI.open("https://media.giphy.com/media/kBkuVMZkRP44BE3s5s/giphy.mp4")
 list2 = List.new(
     name: "name 2",
     style: "style 2",
@@ -41,9 +49,11 @@ list2 = List.new(
     content: "some text here to test the column..",
     user: admin
     )
-
+list2.photo.attach(io: photo2, filename: 'image.png', content_type: 'image/png')
 list2.save
 
+photo3 = File.open(File.join(Rails.root, "/app/assets/images/tof.gif"))
+# photo3 = URI.open("https://media.giphy.com/media/kBkuVMZkRP44BE3s5s/giphy.mp4")
 list3 = List.new(
     name: "name 3",
     style: "style 3",
@@ -51,9 +61,11 @@ list3 = List.new(
     content: "some text here to test the column..",
     user: admin
     )
-
+list3.photo.attach(io: photo3, filename: 'image.png', content_type: 'image/png')
 list3.save
 
+photo4 = File.open(File.join(Rails.root, "/app/assets/images/tof.gif"))
+# photo4 = URI.open("https://media.giphy.com/media/kBkuVMZkRP44BE3s5s/giphy.mp4")
 list4 = List.new(
     name: "name 4",
     style: "style 4",
@@ -61,9 +73,11 @@ list4 = List.new(
     content: "some text here to test the column..",
     user: admin
     )
-
+list4.photo.attach(io: photo4, filename: 'image.png', content_type: 'image/png')
 list4.save
 
+photo5 = File.open(File.join(Rails.root, "/app/assets/images/tof.gif"))
+# photo5 = URI.open("https://media.giphy.com/media/kBkuVMZkRP44BE3s5s/giphy.mp4")
 list5 = List.new(
     name: "name 5",
     style: "style 5",
@@ -71,9 +85,11 @@ list5 = List.new(
     content: "some text here to test the column..",
     user: admin
     )
-
+list5.photo.attach(io: photo5, filename: 'image.png', content_type: 'image/png')
 list5.save
 
+photo6 = File.open(File.join(Rails.root, "/app/assets/images/tof.gif"))
+# photo6 = URI.open("https://media.giphy.com/media/kBkuVMZkRP44BE3s5s/giphy.mp4")
 list6 = List.new(
     name: "name 6",
     style: "style 6",
@@ -81,7 +97,7 @@ list6 = List.new(
     content: "some text here to test the column..",
     user: admin
     )
-
+list6.photo.attach(io: photo6, filename: 'image.png', content_type: 'image/png')
 list6.save
 
 puts "Lists created! Enjoy!"
