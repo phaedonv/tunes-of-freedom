@@ -2,7 +2,7 @@
   <%= link_to root_path, class: "navbar-brand" do %>
     <% if current_user %>
       <%= cl_image_tag "https://res.cloudinary.com/thisisnotanimage/image/upload/v1595696199/Tunes%20of%20Freedom/mask-guy-neon-eye-th-2048x1152_yhrfg9.jpg", style: 'height:142px;width:142px;border-radius:50%;object-fit:cover;object-position:center;position:absolute;' %>
-      <p id="welcome-msg">Welcome <%= current_user.email %>! Enjoy your music.</p>
+      <p id="welcome-msg">Welcome <%= current_user.name %>! Enjoy your music.</p>
       <% else %>
         <%= cl_image_tag "https://res.cloudinary.com/thisisnotanimage/image/upload/v1595696199/Tunes%20of%20Freedom/mask-guy-neon-eye-th-2048x1152_yhrfg9.jpg", style: 'height:142px;width:142px;border-radius:50%;object-fit:cover;object-position:center;position:absolute;' %>
         <p id="welcome-msg">Sign in to create your own lists!</p>
