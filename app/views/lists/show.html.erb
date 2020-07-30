@@ -34,7 +34,7 @@
 
 <h1><%= @list.name %></h1>
 <h3><%= @list.style %></h3>
-<p>Made by <%= @list.user %> with love!</p>
+<p>Made by <%= @list.user.name %> with love!</p>
 <div class="item">
   <iframe width="560" height="315" src="<%= @list.link %>"
   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
