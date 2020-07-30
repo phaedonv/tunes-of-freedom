@@ -16,7 +16,7 @@ puts "..........................."
 puts "..........................."
 
 puts "now creating admin!"
-p admin = User.create!(email: "admin@admin.com", password: "useradmin")
+p admin = User.create!(email: "admin@admin.com", password: "useradmin", name: "nemo")
 
 puts "now creating some lists...."
 
