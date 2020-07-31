@@ -6,7 +6,19 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+require "dotenv"
+#require_relative '../.env'
 require "open-uri"
+
+=begin
+Dotenv.load(
+  File.join(Rails.root, ".env.local"),
+  File.join(Rails.root, ".env.#{Rails.env}"),
+  File.join(Rails.root, ".env")
+)
+=end
+
+pass = ENV["ADMIN_PASS"]
 
 puts "now destroying all lists & users..."
 List.destroy_all
@@ -22,12 +34,12 @@ puts "..........................."
 puts "now creating admin!"
 p admin = User.create!(
   email: "admin@admin.com",
-  password: "useradmin",
+  password: pass,
   name: "nemo",
   admin: true
   )
 
-
+#=begin
 puts "now creating some lists...."
 
 puts "..........................."
@@ -105,5 +117,5 @@ list6 = List.new(
     )
 list6.photo.attach(io: photo6, filename: 'image.png', content_type: 'image/png')
 list6.save
-
+#=end
 puts "Lists created! Enjoy!"
