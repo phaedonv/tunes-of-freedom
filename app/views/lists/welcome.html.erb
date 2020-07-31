@@ -1,10 +1,12 @@
-<% if current_user && current_user.admin? %>
-  <h1>hello admin friend!</h1>
-<% elsif user_signed_in? %>
-   <h1>You are not the admin..</h1>
-<% else %>
-  <h1>sign in to save your lists</h1>
-<% end %>
+<div class="list-box" id="admin-box">
+  <% if current_user && current_user.admin? %>
+    <h1 id="admin-not">hello admin friend!</h1>
+  <% elsif user_signed_in? %>
+     <h1 id="admin-not">You are not the admin..</h1>
+  <% else %>
+    <h1 id="admin-not">sign in to save your lists</h1>
+  <% end %>
+</div>
 
 <!-- trying to find a way to loop for every list! -->
 <div class="list-box">
