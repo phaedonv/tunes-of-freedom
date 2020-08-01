@@ -30,9 +30,9 @@ h1, h2, h3 {
   font-family: 'Poiret One', cursive;
   font-size: 60px;
   font-weight: bolder;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 0 0 3px #D82090, 0 0 5px #4098C0;
   letter-spacing: 14px;
-  color: #28a745;
+  color: #48B8D0;
 }
 
 .item {
@@ -64,7 +64,8 @@ body {
 }
 
 .nav-link {
-  color: #28a745 !important;
+  color: #EC3DA7 !important;
+  text-shadow: 0 0 3px #D82090, 0 0 5px #4098C0;
   font-size: 24px;
 }
 
