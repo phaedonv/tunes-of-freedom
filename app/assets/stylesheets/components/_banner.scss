@@ -1,12 +1,20 @@
 @font-face {
-  font-family: neon;
-  src: url(hellodenverdisplayregular_v1.6.ttf);
+    font-family: 'HELLODENVERDISPLAYREGULARRg';
+    src: url('<%= asset_path("hellodenverdisplayregular_v1.6.eot") %>');
+    src: font-url('font.hellodenverdisplayregular_v1.6.eot?#iefix') format('embedded-opentype'),
+         font-url('font.hellodenverdisplayregular_v1.6.woff') format('woff'),
+         font-url('font.hellodenverdisplayregular_v1.6.ttf') format('truetype'),
+         font-url('font.hellodenverdisplayregular_v1.6.svg#HELLODENVERDISPLAYREGULARRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
 .neon-text {
   background-color: #0000;
   padding-top: 3rem;
   text-align: center;
-  font-family:neon, 'Poiret One', cursive;;
+  font-family: 'HELLODENVERDISPLAYREGULARRg', 'Poiret One', cursive;;
   font-size: 7rem;
   color: #ffd8d8;
 }
