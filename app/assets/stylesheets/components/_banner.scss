@@ -3,12 +3,17 @@
   src: url(hellodenverdisplayregular_v1.6.ttf);
 }
 .neon-text {
-  background-color: black;
+  background-color: #0000;
   padding-top: 3rem;
   text-align: center;
   font-family:neon, 'Poiret One', cursive;;
   font-size: 7rem;
   color: #ffd8d8;
+}
+
+.neon-wrapper {
+  top: 6rem;
+  position: relative;
 }
 
 .neon-text {
@@ -104,11 +109,12 @@ p.cursor::after {
   align-content: center;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-#quote {
-  font-size: 36px;
-  color: white;
+#quote-div {
+  position: absolute;
+  top: 24rem;
 }
 
 #style p {
