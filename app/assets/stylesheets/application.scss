@@ -58,23 +58,6 @@ body {
   color: white;
 }
 
-.navbar {
-  position: fixed;
-  width: 100%;
-}
-
-.nav-link {
-  color: #EC3DA7 !important;
-  text-shadow: 0 0 3px #D82090, 0 0 5px #4098C0;
-  font-size: 24px;
-}
-
-.nav-link:hover {
-  color: black !important;
-  background-color: #28a745;
-  border-radius: 80px;
-}
-
 #list-photo {
   display: flex;
   flex-direction: column;

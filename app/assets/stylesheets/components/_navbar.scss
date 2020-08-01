@@ -12,6 +12,28 @@
   width: 40px;
 }
 
+.navbar {
+  position: fixed;
+  width: 100%;
+}
+
+.nav-link {
+  color: #EC3DA7 !important;
+  text-shadow: 0 0 3px #D82090, 0 0 5px #4098C0;
+  font-size: 24px;
+}
+
+.nav-link:hover {
+  color: black !important;
+  background-color: #4981A6;
+  border-radius: 80px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+
 #welcome-msg {
   position: relative;
   color: #48B8D0;
@@ -21,4 +43,13 @@
   font-size: 15px;
   letter-spacing: 9px;
   font-family: 'Bangers', sans-serif, cursive;
+}
+
+#dropdownMenuButton {
+  background: linear-gradient(45deg, rgba(59,173,227,1) 0%, rgba(87,111,230,1) 25%, rgba(152,68,183,1) 51%, rgba(255,53,127,1) 100%);
+  border: aqua;
+}
+
+#dropdownMenuButton:hover {
+  background: linear-gradient(45deg, rgba(255,53,127,1) 0%, rgba(152,68,183,1) 25%, rgba(87,111,230,1) 51%, rgba(59,173,227,1) 100%);
 }

@@ -24,7 +24,7 @@ function shuffle(arra1) {
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".
 var textArray = [
-  "  Oh, there is a light and it never goes out..|The Smiths"
+  "  Oh, there is a light and it never goes out..|The Smiths",
   "  Emancipate yourselves from mental slavery. None but ourselves can free our minds.|Bob Marley",
   "  Don't criticize what you can't understand|Bob Dylan",
   "  I get by with a little help from my friends.|John Lennon",
