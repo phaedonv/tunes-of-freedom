@@ -60,6 +60,22 @@ p.cursor::after {
 #welcome-quote {
   display: flex;
   align-content: center;
+  }
+  49% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+
+//...............................................
+
+#welcome-quote {
+  display: flex;
+  align-content: center;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -96,3 +112,16 @@ p.cursor::after {
 #style {
   text-align: center;
 }
+
+//.........................button-test..............................
+
+#enter-btn {
+  background: linear-gradient(45deg, rgba(59,173,227,1) 0%, rgba(87,111,230,1) 25%, rgba(152,68,183,1) 51%, rgba(255,53,127,1) 100%);
+  border: aqua;
+}
+
+#enter-btn:hover {
+  background: linear-gradient(45deg, rgba(255,53,127,1) 0%, rgba(152,68,183,1) 25%, rgba(87,111,230,1) 51%, rgba(59,173,227,1) 100%);
+}
+
+
