@@ -113,13 +113,13 @@ p.cursor::after {
   display: flex;
   align-content: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: stretch;
   flex-wrap: wrap;
 }
 
 #quote-div {
-  position: inherit !important;
-  top: 24rem;
+  position: absolute;
+  top: 26rem;
 }
 
 #style p {
