@@ -28,13 +28,13 @@
   text-shadow:
   .1vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8,
 
-  .1vw 0vw   0vw #f25757, .2vw 0vw   0vw #f25757, .4vw 0vw   0vw #f25757,
-  .1vw 0vw  .1vw #f25757, .2vw 0vw  .1vw #f25757, .4vw 0vw  .1vw #f25757,
-  .1vw 0vw   2vw #f25757, .2vw 0vw   2vw #f25757, .4vw 0vw   2vw #f25757,
+  .1vw 0vw   0vw #f91bb7, .2vw 0vw   0vw #f91bb7, .4vw 0vw   0vw #f91bb7,
+  .1vw 0vw  .1vw #f91bb7, .2vw 0vw  .1vw #f91bb7, .4vw 0vw  .1vw #f91bb7,
+  .1vw 0vw   2vw #f91bb7, .2vw 0vw   2vw #f91bb7, .4vw 0vw   2vw #f91bb7,
 
-  .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b,
-  .1vw 0vw   5vw #e50b0b, .2vw 0vw  20vw #e50b0b, .4vw 0vw  10vw #e50b0b,
-  .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b;
+  .1vw 0vw   1vw #d6159f, .2vw 0vw   1vw #d6159f, .4vw 0vw   5vw #d6159f,
+  .1vw 0vw   5vw #d6159f, .2vw 0vw  20vw #d6159f, .4vw 0vw  10vw #d6159f,
+  .1vw 0vw  10vw #d6159f, .2vw 0vw  30vw #d6159f, .4vw 0vw  10vw #d6159f;
 }
 //.............................................................................
 .banner {
@@ -118,7 +118,7 @@ p.cursor::after {
 }
 
 #quote-div {
-  position: absolute;
+  position: inherit !important;
   top: 24rem;
 }
 
@@ -155,6 +155,7 @@ p.cursor::after {
 #enter-btn {
   background: linear-gradient(45deg, rgba(59,173,227,1) 0%, rgba(87,111,230,1) 25%, rgba(152,68,183,1) 51%, rgba(255,53,127,1) 100%);
   border: aqua;
+  color: white;
 }
 
 #enter-btn:hover {
