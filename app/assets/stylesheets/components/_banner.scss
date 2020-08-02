@@ -118,8 +118,9 @@ p.cursor::after {
 }
 
 #quote-div {
-  position: absolute;
-  top: 26rem;
+  position: inherit !important;
+  padding-top: 4rem !important;
+  padding-bottom: 3rem !important;
 }
 
 #style p {
