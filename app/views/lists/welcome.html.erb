@@ -19,9 +19,8 @@
       <div>
         <%= button_to "Listen to me!", list, class: "btn btn-success" %>
       </div>
-      <div class="item" id="video-card">
-        <iframe width="560" height="315" src="<%= list.link %>"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div>
+        <%= cl_image_tag list.photo.key, height: 432, width: 532, crop: :fit %>
       </div>
     </div>
   <% end %>
