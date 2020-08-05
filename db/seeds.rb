@@ -21,7 +21,6 @@ Dotenv.load(
 pass = ENV["ADMIN_PASS"]
 admin = ENV["ADMIN_MAIL"]
 whoami = ENV["ADMIN_NAME"]
-
 puts "now destroying all lists & users..."
 List.destroy_all
 User.destroy_all
@@ -48,7 +47,7 @@ puts "..........................."
 puts "..........................."
 puts "..........................."
 
-photo1 = File.open(File.join(Rails.root, "/app/assets/images/tof.gif"))
+photo1 = File.open(File.join(Rails.root, "/app/assets/images/tof_banner-2.png"))
 # photo1 = URI.open("https://media.giphy.com/media/kBkuVMZkRP44BE3s5s/giphy.mp4")
 list1 = List.new(
     name: "name 1",
@@ -60,7 +59,7 @@ list1 = List.new(
 list1.photo.attach(io: photo1, filename: 'image.png', content_type: 'image/png')
 list1.save
 
-photo2 = File.open(File.join(Rails.root, "/app/assets/images/tof.gif"))
+photo2 = File.open(File.join(Rails.root, "/app/assets/images/tof_banner-2.png"))
 # photo2 = URI.open("https://media.giphy.com/media/kBkuVMZkRP44BE3s5s/giphy.mp4")
 list2 = List.new(
     name: "name 2",
@@ -72,7 +71,7 @@ list2 = List.new(
 list2.photo.attach(io: photo2, filename: 'image.png', content_type: 'image/png')
 list2.save
 
-photo3 = File.open(File.join(Rails.root, "/app/assets/images/tof.gif"))
+photo3 = File.open(File.join(Rails.root, "/app/assets/images/tof_banner-2.png"))
 # photo3 = URI.open("https://media.giphy.com/media/kBkuVMZkRP44BE3s5s/giphy.mp4")
 list3 = List.new(
     name: "name 3",
@@ -84,7 +83,7 @@ list3 = List.new(
 list3.photo.attach(io: photo3, filename: 'image.png', content_type: 'image/png')
 list3.save
 
-photo4 = File.open(File.join(Rails.root, "/app/assets/images/tof.gif"))
+photo4 = File.open(File.join(Rails.root, "/app/assets/images/tof_banner-2.png"))
 # photo4 = URI.open("https://media.giphy.com/media/kBkuVMZkRP44BE3s5s/giphy.mp4")
 list4 = List.new(
     name: "name 4",
@@ -96,7 +95,7 @@ list4 = List.new(
 list4.photo.attach(io: photo4, filename: 'image.png', content_type: 'image/png')
 list4.save
 
-photo5 = File.open(File.join(Rails.root, "/app/assets/images/tof.gif"))
+photo5 = File.open(File.join(Rails.root, "/app/assets/images/tof_banner-2.png"))
 # photo5 = URI.open("https://media.giphy.com/media/kBkuVMZkRP44BE3s5s/giphy.mp4")
 list5 = List.new(
     name: "name 5",
@@ -108,7 +107,7 @@ list5 = List.new(
 list5.photo.attach(io: photo5, filename: 'image.png', content_type: 'image/png')
 list5.save
 
-photo6 = File.open(File.join(Rails.root, "/app/assets/images/tof.gif"))
+photo6 = File.open(File.join(Rails.root, "/app/assets/images/tof_banner-2.png"))
 # photo6 = URI.open("https://media.giphy.com/media/kBkuVMZkRP44BE3s5s/giphy.mp4")
 list6 = List.new(
     name: "name 6",
