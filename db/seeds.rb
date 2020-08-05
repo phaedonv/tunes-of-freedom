@@ -19,6 +19,8 @@ Dotenv.load(
 =end
 
 pass = ENV["ADMIN_PASS"]
+admin = ENV["ADMIN_MAIL"]
+whoami = ENV["ADMIN_NAME"]
 
 puts "now destroying all lists & users..."
 List.destroy_all
@@ -33,9 +35,9 @@ puts "..........................."
 
 puts "now creating admin!"
 p admin = User.create!(
-  email: "admin@admin.com",
+  email: admin,
   password: pass,
-  name: "nemo",
+  name: whoami,
   admin: true
   )
 
