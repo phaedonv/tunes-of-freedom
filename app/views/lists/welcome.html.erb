@@ -16,10 +16,11 @@
       <div>
         <%= list.name + " | " + list.style %>
       </div>
+
       <div>
-        <%= button_to "Listen to me!", list, class: "btn btn-success" %>
-      </div>
-      <div>
+        <div>
+          <%= button_to "Listen to me!", list, class: "btn btn-success" %>
+        </div>
         <%= cl_image_tag list.photo.key, height: 432, width: 532, crop: :fit %>
       </div>
     </div>
