@@ -23,7 +23,18 @@
       </div>
     </div>
   <% end %>
+</div>
 
+<div class="list-box">
+  <% if User.present? %>
+    <% @users.each do |user| %>
+      <div id="usr-lists">
+        <%= user.name + "testing..(here should be link_to user list!)" %>
+      </div>
+    <% end %>
+  <% else %>
+    <p>doesn't work..</p>
+  <% end %>
 </div>
 
 <% if policy(List).create? %>
