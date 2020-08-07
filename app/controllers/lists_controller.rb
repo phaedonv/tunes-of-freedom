@@ -6,8 +6,7 @@ class ListsController < ApplicationController
   # GET /lists.json
   def welcome
     @lists = List.all
-
-
+    @users = User.all
   end
 
   def index
