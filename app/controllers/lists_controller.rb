@@ -6,8 +6,9 @@ class ListsController < ApplicationController
   # GET /lists.json
   def welcome
     @lists = List.all
+  end
 
-
+  def dashboard
   end
 
   def index
