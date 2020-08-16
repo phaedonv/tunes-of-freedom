@@ -9,6 +9,10 @@ class ListsController < ApplicationController
     @users = User.all
   end
 
+  def dashboard
+    
+  end
+
   def index
     welcome
   end
