@@ -2,8 +2,8 @@
 
 <h1>🎶 Tunes Of Freedom 🎶</h1>
 <p>
-  Alternative music page where you can update the website with your own playlists! Website still under construction, but you can visit if you want ;)
-  tunesoffreedom.herokuapp.com
+  Alternative music page where you can update the website with your own playlists! Website still under construction, but you can visit it
+  <a href="https://tunesoffreedom.herokuapp.com/">here</a> if you want ;)
 </p>
 
 <h4>
