@@ -1,26 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+🎶 Tunes Of Freedom 🎶
+Alternative music page where you can update the website with your own playlists! Website still under construction, but you can visit if you want ;)
+tunesoffreedom.herokuapp.com
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-everything seems to work now?
+facebook_page: https://www.facebook.com/tunesoffreedom
+instagram_page: https://www.instagram.com/tunes.of.freedom/
+youtube_channel: https://www.youtube.com/channel/UCey92XtoDbi7j2TrDL6CLSA
