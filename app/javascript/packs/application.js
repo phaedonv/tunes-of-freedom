@@ -17,3 +17,8 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 import 'bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle';
+
+//= jquery //= jquery_ujs
+
+import Rails from '@rails/ujs';
+Rails.start();

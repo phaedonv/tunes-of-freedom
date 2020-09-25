@@ -1,3 +1,6 @@
+import Rails from '@rails/ujs';
+
+
 // values to keep track of the number of letters typed, which quote to use. etc. Don't change these values.
 var i = 0,
     a = 0,
