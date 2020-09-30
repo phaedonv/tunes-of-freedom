@@ -1,6 +1,6 @@
 .footer {
   height: 666px !important;
-  background: #F4F4F4;
+  background-color: #2a2a2a;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@
   color: #495057;
   position: relative;
   bottom: 0;
-  background-image: url("https://media.giphy.com/media/ZTans30ONaaIM/giphy.gif");
+  /*background-image: url("https://media.giphy.com/media/ZTans30ONaaIM/giphy.gif");*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,4 +31,26 @@
 }
 .footer .fa-heart {
   color: black;
+}
+
+#ucon {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+
+  font-weight: bolder;
+  text-shadow: 0 0 3px black, 0 0 5px #ff00d4;
+  letter-spacing: 0px;
+  color: white;
+}
+
+#footer-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+
+  font-weight: bolder;
+  text-shadow: 0 0 3px black, 0 0 5px #ff00d4;
+  letter-spacing: 0px;
+  color: white;
 }
