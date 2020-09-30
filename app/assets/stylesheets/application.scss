@@ -75,3 +75,14 @@ body {
   flex-direction: column-reverse;
   align-items: center;
 }
+
+.neon-info {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
+  font-weight: bolder;
+  text-shadow: 0 0 3px black, 0 0 5px #ff00d4;
+  letter-spacing: 14px;
+  color: white;
+}
