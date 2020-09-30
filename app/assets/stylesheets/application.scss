@@ -111,3 +111,11 @@ body {
   letter-spacing: 0px;
   color: white;
 }
+
+p::selection { color: #f91bb7; }
+h1::selection { color: #f91bb7; }
+h2::selection { color: #f91bb7; }
+h3::selection { color: #f91bb7; }
+a::selection { color: #f91bb7; }
+.neon-info::selection { color: #f91bb7; }
+img::selection { color: #f91bb7; }
