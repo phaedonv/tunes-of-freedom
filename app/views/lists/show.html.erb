@@ -27,13 +27,19 @@
   </div>
 </div>
 
-<%= link_to 'Edit', edit_list_path(@list) %> |
-<%= link_to 'Back', lists_path %>
+<div id="list-info">
+  <h1 class="neon-info-big"><%= @list.name %></h1>
+  <h3 class="neon-info-big"><%= @list.style %></h3>
+</div>
 
-<h1><%= @list.name %></h1>
-<h3><%= @list.style %></h3>
-<p>Made by <%= @list.user.name %> with love!</p>
 <div class="item">
   <iframe width="560" height="315" src="<%= @list.link %>"
   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+<p class="neon-info">Made by <%= @list.user.name %> with love!</p>
+
+<p class="neon-info">
+  <%= link_to 'Edit', edit_list_path(@list) %> |
+  <%= link_to 'Back', lists_path %>
+</p>
