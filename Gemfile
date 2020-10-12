@@ -28,6 +28,11 @@ gem 'devise'
 
 gem 'pundit'
 
+# For the Modal..
+
+gem 'bootstrap'
+gem 'popper_js'
+
 # Upload photos
 gem 'cloudinary'
 

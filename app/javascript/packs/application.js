@@ -24,7 +24,3 @@ import Rails from '@rails/ujs';
 Rails.start();
 
 
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
-
