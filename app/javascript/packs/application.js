@@ -22,3 +22,5 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 
 import Rails from '@rails/ujs';
 Rails.start();
+
+
