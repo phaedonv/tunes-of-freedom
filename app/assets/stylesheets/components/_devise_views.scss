@@ -1,0 +1,29 @@
+.field {
+  text-align: center;
+  text-shadow: 0 0 3px #D82090, 0 0 5px #4098C0;
+  letter-spacing: 6px;
+  color: #48B8D0;
+}
+
+#new-session {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+a:visited {
+    color: #EC3DA7;
+    text-shadow: 0 0 3px #D82090, 0 0 5px #4098C0;
+  }
+
+.actions input {
+  color: #48B8D0;
+  text-shadow: 0 0 #EC3DA7;
+  background-color: black;
+  border: #EC3DA7;
+  border-radius: 42px;
+  padding: 24px 42px;
+}
+
+
