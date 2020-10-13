@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
+
   root to: "lists#welcome"
   get "welcome", to: "lists#welcome"
   post 'lists/:id', to: 'lists#show'
