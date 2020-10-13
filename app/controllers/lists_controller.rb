@@ -10,11 +10,13 @@ class ListsController < ApplicationController
   end
 
   def dashboard
-    
+
   end
 
   def index
     welcome
+
+    authorize @list
   end
 
   # GET /lists/1
