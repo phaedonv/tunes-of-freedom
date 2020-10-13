@@ -5,6 +5,12 @@
 require("plugins/typing.js")
 require("@rails/ujs").start()
 
+//= require jquery
+//= require popper
+//= require turbolinks
+//= require bootstrap
+//= require_tree
+
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
