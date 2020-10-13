@@ -5,7 +5,7 @@
 -->
 
 <!-- Modal -->
-<div class="modal fade" id="login" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="myModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -44,7 +44,7 @@
               <div class="actions" >
                 <%= f.submit "Log in" %>
                 <span data-toggle="modal" data-target="#myModal">
-                  <%= link_to 'Sign up', '/users/sign_up', 'data-toggle' => "modal", 'data-target' => "#signup", class: "nav-link" %>
+                  <%= link_to 'Sign up', new_user_registration_path, 'data-toggle' => "modal", 'data-target' => "#signup", class: "nav-link" %>
                 </span>
               </div>
 
