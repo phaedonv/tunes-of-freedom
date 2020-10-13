@@ -41,9 +41,11 @@
             </div>
 
             <div>
-              <div class="actions" data-toggle="modal" data-target="#myModal">
+              <div class="actions" >
                 <%= f.submit "Log in" %>
-                <%= link_to "Sign up", '/sign_up', data: {remote: "true", toggle: "modal", target: "#modal"}, class: "nav-link", method: "get" %>
+                <span data-toggle="modal" data-target="#myModal">
+                  <%= link_to "Sign up", '/users/sign_up', data: {remote: "true", toggle: "modal", target: "#modal"}, class: "nav-link", method: "get" %>
+                </span>
               </div>
 
               <% render "devise/shared/links" %>
