@@ -15,8 +15,6 @@ class ListsController < ApplicationController
 
   def index
     welcome
-
-    authorize @list
   end
 
   # GET /lists/1
