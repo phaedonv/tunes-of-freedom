@@ -39,7 +39,7 @@
 </div>
           <% else %>
             <li class="nav-item" data-toggle="modal" data-target="#myModal">
-              <%= link_to "Login", "#my-modal", "data-toggle" => "modal", class: "nav-link" %>
+              <%= link_to "Login", '/users/sign_in', data: {remote: "true", toggle: "modal", target: "#modal"}, class: "nav-link", method: "get" %>
             </li>
           <% end %>
         </div>
