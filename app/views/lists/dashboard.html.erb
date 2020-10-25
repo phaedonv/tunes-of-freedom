@@ -1,1 +1,10 @@
-<h1>dashboard testing</h1>
+<div>
+  <h1>dashboard testing</h1>
+  <div class="my-lists">
+    <% @my_lists.each do |list| %>
+
+    <%= link_to list.name, list_path(list) %>
+  <% end %>
+</div>
+
+

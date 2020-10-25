@@ -10,7 +10,7 @@ class ListsController < ApplicationController
   end
 
   def dashboard
-
+    @my_lists = List.where(user: current_user)
   end
 
   def index
@@ -21,16 +21,13 @@ class ListsController < ApplicationController
   # GET /lists/1.json
   def show
     set_list
-
     authorize @list
   end
 
   # GET /lists/new
   def new
     @list = List.new
-
     authorize @list
-
   end
 
   # GET /lists/1/edit
@@ -91,3 +88,5 @@ class ListsController < ApplicationController
       params.require(:list).permit(:name, :style, :link, :content, :photo)
     end
 end
+
+
