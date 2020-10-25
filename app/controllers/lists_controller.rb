@@ -21,16 +21,13 @@ class ListsController < ApplicationController
   # GET /lists/1.json
   def show
     set_list
-
     authorize @list
   end
 
   # GET /lists/new
   def new
     @list = List.new
-
     authorize @list
-
   end
 
   # GET /lists/1/edit

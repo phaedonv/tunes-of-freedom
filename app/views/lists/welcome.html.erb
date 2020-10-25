@@ -25,11 +25,13 @@
   <% end %>
 </div>
 
+<!--Here comes the links to each user dashboard!-->
+
 <div class="list-box">
   <% if User.present? %>
     <% @users.each do |user| %>
       <div id="usr-lists">
-        <%= button_to user.name + "testing..(here should be link_to #{user.name} list!)", dashboard_path, class: "btn btn-danger" %>
+        <%= button_to user.name + "testing..(here should be link_to #{user.name} list!)", dashboard_path(@user_id), class: "btn btn-danger" %>
       </div>
     <% end %>
   <% else %>
