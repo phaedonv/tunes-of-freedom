@@ -3,7 +3,7 @@ class DashboardController < ApplicationController
 
   def show
     @users = User.all
-    @my_lists = List.where(user: current_user)
+    @my_lists = current_user.lists.order(created_at: :desc) #List.where(user: current_user)
     @user = User.find(params[:id])
   end
 

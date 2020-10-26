@@ -31,7 +31,7 @@
   <% if User.present? %>
     <% @users.each do |user| %>
       <div id="usr-lists">
-        <%= button_to user.name + "testing..(here should be link_to #{user.name} list!)", dashboard_url(@user), class: "btn btn-danger" %>
+        <%= button_to user.name + "testing..(here should be link_to #{user.name} list!)", dashboard_url(user), class: "btn btn-danger" %>
       </div>
     <% end %>
   <% else %>
