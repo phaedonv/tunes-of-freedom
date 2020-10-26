@@ -5,8 +5,11 @@ class DashboardController < ApplicationController
   end
 
   def dashboard
-    @my_lists = List.where(user: params[:id])
-    # ? @user = current_user.lists.where(id: params[:id])
+    @users = User.all
+    @users.each do |user|
+      @my_lists = List.where(user: user)
+      # ? @user = current_user.lists.where(id: params[:id])
+    end
   end
 
 end
