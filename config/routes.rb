@@ -7,9 +7,10 @@ Rails.application.routes.draw do
   resources :lists
 
 
-  get "dashboard",to: 'lists#dashboard'
-  post "dashboard",to: 'lists#dashboard'
+  get "dashboard",to: 'dashboard#dashboard'
+  post "dashboard",to: 'dashboard#dashboard'
 
 
+  resources :dashboard
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

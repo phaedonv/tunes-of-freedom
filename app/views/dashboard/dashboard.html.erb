@@ -1,10 +1,12 @@
 <div>
-  <h1>dashboard testing</h1>
   <div class="my-lists">
+    <h1>THIS IS THE CORRECT DASHBOARD!</h1>
     <% @my_lists.each do |list| %>
 
     <%= link_to list.name, list_path(list) %>
-  <% end %>
+    <% end %>
+  </div>
 </div>
+
 
 

@@ -9,11 +9,6 @@ class ListsController < ApplicationController
     @users = User.all
   end
 
-  def dashboard
-    @my_lists = List.where(user: current_user)
-    # ? @user = current_user.lists.where(id: params[:id])
-  end
-
   def index
     welcome
   end
