@@ -1,0 +1,18 @@
+<div>
+  <div class="my-lists">
+    <h1>THIS IS THE CORRECT DASHBOARD!</h1>
+
+    <% @my_lists.each do |list| %>
+    <%= link_to list.name, list_path(list) %>
+    <% end %>
+
+    <br><hr>
+    <%= link_to @user.name, dashboard_url %>
+    <br>
+
+
+  </div>
+</div>
+
+
+

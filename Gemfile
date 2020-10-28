@@ -28,6 +28,9 @@ gem 'devise'
 
 gem 'pundit'
 
+# Automate controller update name, routes etc with ruby_refactor
+gem 'rails_refactor', '~> 1.4', '>= 1.4.6'
+
 # For the Modal..
 
 gem 'bootstrap'

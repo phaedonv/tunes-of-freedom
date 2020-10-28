@@ -9,11 +9,6 @@ class ListsController < ApplicationController
     @users = User.all
   end
 
-  def dashboard
-    @my_lists = List.where(user: current_user)
-    # ? @user = current_user.lists.where(id: params[:id])
-  end
-
   def index
     welcome
   end
@@ -86,7 +81,7 @@ class ListsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def list_params
-      params.require(:list).permit(:name, :style, :link, :content, :photo)
+      params.require(:list).permit(:name, :style, :link, :content, :photo, :user_id)
     end
 end
 
