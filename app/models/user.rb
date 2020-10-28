@@ -8,6 +8,7 @@ class User < ApplicationRecord
   validates :password, presence: true
   validates :name, presence: true, uniqueness: true
 
-  has_one_attached :photo
+  has_one :dashboard, dependent: :destroy
   has_many :lists, dependent: :destroy
+  has_one_attached :photo
 end

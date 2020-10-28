@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   post 'lists/:id', to: 'lists#show'
   resources :lists
 
-  post 'dashboard/:id', to: 'dashboard#show'
-  resources :dashboard, only: [:show]
+  post 'dashboards/:id', to: 'dashboards#show'
+  resources :dashboards, only: [:show]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
