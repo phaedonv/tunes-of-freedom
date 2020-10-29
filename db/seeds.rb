@@ -45,7 +45,7 @@ puts "..admin created.."
 
 puts "Creating dashboars.."
 
-p dash0 = Profile.create!(
+p dash0 = Dashboard.create!(
   first_name: "Pha",
   last_name: "Edon",
   age: 42,
