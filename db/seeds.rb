@@ -43,6 +43,17 @@ p admin = User.create!(
   )
 puts "..admin created.."
 
+puts "Now creating users...!"
+
+p user1 = User.create!(
+  email: "alpha@gmail.com",
+  password: "1234567",
+  name: "alpha",
+  admin: false
+  )
+
+puts "..users created!"
+
 puts "Creating dashboars.."
 
 p dash0 = Dashboard.create!(
@@ -53,6 +64,15 @@ p dash0 = Dashboard.create!(
   status: "Feeling good"
   )
 dash0.user_id = admin.id
+
+p dash1 = Dashboard.create!(
+  first_name: "Alpha",
+  last_name: "User",
+  age: 64,
+  location: "USA",
+  status: "Alpha is also feeling good ;)"
+  )
+dash1.user_id = user1.id
 
 puts "..dashboards created.."
 
