@@ -21,9 +21,11 @@ Dotenv.load(
 pass = ENV["ADMIN_PASS"]
 admin = ENV["ADMIN_MAIL"]
 whoami = ENV["ADMIN_NAME"]
-puts "now destroying all lists & users..."
-List.destroy_all
+puts "Now destroying all lists & users..."
 User.destroy_all
+Dashboard.destroy_all
+List.destroy_all
+
 
 puts "..........................."
 puts "..........................."
@@ -32,13 +34,27 @@ puts "..........................."
 puts "..........................."
 puts "..........................."
 
-puts "now creating admin!"
+puts "Now creating admin!"
 p admin = User.create!(
   email: admin,
   password: pass,
   name: whoami,
   admin: true
   )
+puts "..admin created.."
+
+puts "Creating dashboars.."
+
+p dash0 = Dashboard.create!(
+  first_name: "Pha",
+  last_name: "Edon",
+  age: 42,
+  location: "Greece",
+  status: "Feeling good"
+  )
+dash0.user_id = admin.id
+
+puts "..dashboards created.."
 
 #=begin
 puts "now creating some lists...."
