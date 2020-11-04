@@ -6,6 +6,7 @@ class CreateDashboards < ActiveRecord::Migration[6.0]
       t.integer :age
       t.string :location
       t.string :status
+      t.references :user, null: true, foreign_key: true
 
       t.timestamps
     end
