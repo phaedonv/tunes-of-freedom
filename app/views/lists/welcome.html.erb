@@ -11,7 +11,7 @@
 <!-- trying to find a way to loop for every list! -->
 <div class="list-box">
 
-  <% @lists.each do |list| %>
+  <% @users.first.lists.each do |list| %>
     <div id="landing-cards">
       <div class="neon-info">
         <%= list.name + " | " + list.style %>
