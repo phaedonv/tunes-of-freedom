@@ -8,10 +8,10 @@
   <% end %>
 </div>
 
-<!-- trying to find a way to loop for every list! -->
+<!-- Looper for every list! -->
 <div class="list-box">
 
-  <% @lists.each do |list| %>
+  <% User.first.lists.each do |list| %>
     <div id="landing-cards">
       <div class="neon-info">
         <%= list.name + " | " + list.style %>
