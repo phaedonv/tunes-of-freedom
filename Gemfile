@@ -50,6 +50,11 @@ gem 'jquery-rails'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+# Real_Favicon Gem
+group :development do
+  gem 'rails_real_favicon'
+end
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
