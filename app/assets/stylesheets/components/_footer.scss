@@ -54,3 +54,17 @@
   letter-spacing: 0px;
   color: white;
 }
+
+#gh {
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+}
+
+#github-link {
+  opacity: 0.3;
+}
+
+#github-link:hover {
+  opacity: 1;
+}
