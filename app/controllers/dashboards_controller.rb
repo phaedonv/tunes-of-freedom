@@ -3,12 +3,14 @@ class DashboardsController < ApplicationController
   before_action :set_dashboard, only:[:show, :edit, :destroy, :update]
 
   def show
+
     @user = User.find(params[:id])
     @users = User.all
     @my_lists = current_user.lists.order(created_at: :desc) #List.where(user: current_user)
 
 
     @their_lists = @user.lists
+
 
     authorize @dashboard
   end
@@ -27,6 +29,7 @@ class DashboardsController < ApplicationController
     else
       render :new
     end
+
   end
 
   def edit
