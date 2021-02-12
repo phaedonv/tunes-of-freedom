@@ -2,7 +2,9 @@
 
   <div id="dashboard">
 
-    <h1>Users#show</h1>
+    <% full_name = @user.first_name + " " + @user.last_name %>
+
+    <h1><%= full_name %></h1>
 
     <h4>Find me in app/views/users/show.html.erb</h4>
 
