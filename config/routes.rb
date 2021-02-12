@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :users, only: [:index, :show, :edit, :update]
+  post 'users/:id', to: 'users#show'
   root to: "lists#welcome"
 
   get "welcome", to: "lists#welcome"
