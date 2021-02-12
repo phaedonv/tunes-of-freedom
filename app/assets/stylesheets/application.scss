@@ -94,7 +94,10 @@ body {
 
 #landing-cards:hover {
   opacity: 1;
-  box-shadow: 10px 10px 40px #ff00d4;
+}
+
+#listcard:hover {
+  box-shadow: 0 0 10px #ff00d4;
 }
 
 .neon-info {
