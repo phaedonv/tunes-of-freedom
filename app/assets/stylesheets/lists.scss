@@ -1,3 +1,17 @@
 // Place all the styles related to the Lists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#lists {
+  margin-top: 10vh;
+  padding: 15px;
+  text-align: center;
+  border: 1.5px solid #f91bb7;
+  border-radius: 15px;
+}
