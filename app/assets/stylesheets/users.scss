@@ -1,3 +1,17 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#dashboard {
+  margin-top: 10vh;
+  padding: 15px;
+  text-align: center;
+  border: 3px solid purple;
+  border-radius: 15px;
+}

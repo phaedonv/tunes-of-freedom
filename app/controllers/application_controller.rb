@@ -8,7 +8,6 @@ class ApplicationController < ActionController::Base
     user_path(current_user) #redirection to current user page after login with devise
   end
 
-
   private
 
   def configure_permitted_parameters
