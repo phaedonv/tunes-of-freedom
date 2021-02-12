@@ -1,0 +1,25 @@
+<div class="container">
+
+  <div id="dashboard">
+
+    <% full_name = @user.first_name + " " + @user.last_name %>
+
+    <h1><%= full_name %></h1>
+
+    <h4>Find me in app/views/users/show.html.erb</h4>
+
+    <hr style="background-color: lime; width: 37.5%;">
+
+    <h4>name | username: <%= @user.name %></h4>
+
+    <h4>email: <%= @user.email %></h4>
+
+    <h4>first name: <%= @user.first_name %></h4>
+
+    <h4>last name: <%= @user.last_name %></h4>
+
+    <h4>status: <%= @user.status %></h4>
+
+  </div>
+
+</div>

@@ -45,5 +45,5 @@
 
 
 <% unless @list.user == current_user %>
-  <%= link_to "Created by #{@list.user.name}", dashboard_path(@list.user.id)%>
+  <%= link_to "Created by #{@list.user.name}", user_path(@list.user.id)%>
 <% end %>

@@ -23,7 +23,6 @@ admin = ENV["ADMIN_MAIL"]
 whoami = ENV["ADMIN_NAME"]
 puts "Now destroying all lists & users..."
 User.destroy_all
-Dashboard.destroy_all
 List.destroy_all
 
 
@@ -39,7 +38,10 @@ p admin = User.create!(
   email: admin,
   password: pass,
   name: whoami,
-  admin: true
+  admin: true,
+  status: "I like music! What about you?",
+  first_name: "Phaedon",
+  last_name: "V"
   )
 puts "..admin created.."
 
@@ -49,32 +51,13 @@ p user1 = User.create!(
   email: "alpha@gmail.com",
   password: "1234567",
   name: "alpha",
-  admin: false
+  admin: false,
+  status: "I like movies! Don't know what I am doing in this web-app..",
+  first_name: "Mr",
+  last_name: "Tester"
   )
 
 puts "..users created!"
-
-puts "Creating dashboars.."
-
-p dash0 = Dashboard.create!(
-  first_name: "Pha",
-  last_name: "Edon",
-  age: 42,
-  location: "Greece",
-  status: "Feeling good"
-  )
-dash0.user_id = admin.id
-
-p dash1 = Dashboard.create!(
-  first_name: "Alpha",
-  last_name: "User",
-  age: 64,
-  location: "USA",
-  status: "Alpha is also feeling good ;)"
-  )
-dash1.user_id = user1.id
-
-puts "..dashboards created.."
 
 #=begin
 puts "now creating some lists...."
