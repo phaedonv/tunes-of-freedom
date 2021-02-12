@@ -1,8 +1,13 @@
 <h1>Users#index</h1>
 
-<p>Find me in app/views/users/index.html.erb</p>
-
-<% @users.each do %>
-
-
-<% end %>
+<div class="list-box">
+  <% if User.present? %>
+    <% @users.each do |user| %>
+      <div id="usr-lists">
+        <%= button_to user.name + "testing..(here should be link_to #{user.name} list!)", user_path(user.id), class: "btn btn-danger" %>
+      </div>
+    <% end %>
+  <% else %>
+    <p>doesn't work..</p>
+  <% end %>
+</div>
