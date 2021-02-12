@@ -38,7 +38,10 @@ p admin = User.create!(
   email: admin,
   password: pass,
   name: whoami,
-  admin: true
+  admin: true,
+  status: "I like music! What about you?",
+  first_name: "Phaedon",
+  last_name: "V"
   )
 puts "..admin created.."
 
@@ -48,7 +51,10 @@ p user1 = User.create!(
   email: "alpha@gmail.com",
   password: "1234567",
   name: "alpha",
-  admin: false
+  admin: false,
+  status: "I like movies! Don't know what I am doing in this web-app..",
+  first_name: "Mr",
+  last_name: "Tester"
   )
 
 puts "..users created!"
